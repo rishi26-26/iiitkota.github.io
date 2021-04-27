@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --first-color: #3664f4;
+  --dark-color: #070d1f;
+  --dark-color-alt: #282b3a;
+  --white-color: #e6e7e9;
+
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-color);
+  padding: 2rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  margin-top: 0.3rem;
+  height: 46px;
+  width: 46px;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+.name {
+  color: var(--white-color);
+}
+
+.social__icon {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+.social__icon:hover ion-icon {
+  transition: transform 0.5s ease, 0.5s color ease;
+  color: var(--first-color);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: var(--small-font-size);
+  }
+  .right {
+    display: none;
+  }
+  .nav-items {
+    font-size: 0.75rem;
+  }
+}
+
+.nav {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #282b3a;
+  margin-top: 4rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin: 0 calc(100% - 99%);
+}
+
+.nav-list {
+  padding: 0.5rem;
+}
+.nav-items a {
+  color: var(--white-color);
+  padding: 0.2rem 0.3rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.nav-items a:hover {
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+
+.intro {
+  /* max-width: 1024px; */
+  /* width: calc(100vw - 10rem);
+  margin: 0 auto; */
+  margin: 0 2rem 0 2rem;
+}
+
+.about h2 {
+  font-size: 1rem;
+  margin: 1rem 0 0.6rem 0;
+  color: var(--dark-color);
+}
+
+@media screen and (min-width: 768px) {
+  .about h2 {
+    font-size: 1.5rem;
+    margin: 2rem 0 1.2rem 0;
+  }
+}
+
+.about p {
+  text-align: justify;
+  color: #363846;
+}
+
+.title {
+  text-align: center;
+  padding: 1rem;
+}
+
+.img img {
+  height: 380px;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+}
+
+.img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .img img {
+    height: 300px;
+    width: 310px;
+    padding: 0.5rem;
+    background-repeat: no-repeat;
+  }
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.text {
+  margin: 2rem 0 2rem 2rem;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe h2 {
+  padding: 1.2rem;
+}
+
+.foot {
+  width: 100%;
+  height: 6rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-color);
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.child .list {
+  display: flex;
+  justify-content: center;
+}
+
+.list__item {
+  padding: 0 2rem 0 2rem;
+  border-right: 2px solid white;
+  margin-bottom: 1rem;
+}
+
+.list__item a {
+  color: var(--white-color);
+}
+
+.list__item a:hover {
+  color: var(--first-color);
+}
+
+.copyright p {
+  color: var(--white-color);
+  font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .copyright p {
+    color: var(--white-color);
+    font-size: 0.4rem;
+  }
+  .list__item {
+    font-size: 0.5rem;
+    padding: 0 0.6rem 0 0.6rem;
+    border-right: 1px solid white;
+    margin-bottom: 1rem;
+  }
+}
+
+.neutral{
+    color: brown;
+    text-align: center;
+}
